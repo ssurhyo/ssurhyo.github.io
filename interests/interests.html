@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interests | Saadan Surhyo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .interests-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .interest-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .card-header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .feature-interest {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .feature-interest .card-header {
+            background-color: #2c3e50;
+        }
+        
+        .feature-interest .card-content {
+            padding: 25px;
+        }
+        
+        .interest-links {
+            margin-top: 15px;
+        }
+        
+        .interest-links a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .book {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        
+        .book-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .book-author {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saadan Surhyo</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../courses/coursework.html">Coursework</a></li>
+                <li><a href="../experience/workexp.html">Experience</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Interests & Hobbies</h2>
+            <p>Beyond my academic and professional pursuits, I'm passionate about a variety of topics ranging from technology to sports. Here's a glimpse into what fascinates me outside the classroom and workplace.</p>
+            
+            <div class="interests-container">
+                <div class="interest-card feature-interest">
+                    <div class="card-header">Artificial Intelligence & Machine Learning</div>
+                    <div class="card-content">
+                        <p>My interest in AI and machine learning began during my early university years around 2021, well before the recent explosion of advanced large language models. I was initially drawn to the mathematical foundations of AI, particularly linear algebra and neural networks.</p>
+                        <p>After taking CS540 (Introduction to AI), my fascination with this field has only deepened. I'm especially interested in understanding the inner workings of deep learning systems and how they can be applied to solve complex real-world problems.</p>
+                        <p>The recent advancements in generative AI and large language models have been particularly exciting to follow, as they showcase the remarkable potential of machine learning technologies.</p>
+                        <div class="interest-links">
+                            <a href="https://ai.wisc.edu/" target="_blank">UW-Madison AI Institute</a>
+                            <a href="https://www.kaggle.com/" target="_blank">Kaggle Competitions</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interest-card feature-interest">
+                    <div class="card-header">Financial Markets & Quantitative Finance</div>
+                    <div class="card-content">
+                        <p>I've developed a growing interest in financial markets, investment strategies, and quantitative finance. I'm fascinated by the intersection of mathematics, computer science, and economics in modern financial systems.</p>
+                        <p>I enjoy reading about historical market events like the 1929 and 2008 crashes, which provide valuable lessons about market psychology and systemic risks. I'm also interested in learning about investment banking and the evolution of financial institutions.</p>
+                        <p>I follow the careers and investment philosophies of financial luminaries such as Warren Buffett, Jamie Dimon (JPMorgan Chase CEO), and the legacy of Solomon Brothers in shaping modern investment banking.</p>
+                        <div class="interest-links">
+                            <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929" target="_blank">1929 Stock Market Crash</a>
+                            <a href="https://www.federalreserve.gov/econres/notes/feds-notes/what-happened-in-the-market-in-october-2008-20181019.html" target="_blank">2008 Financial Crisis</a>
+                            <a href="https://www.berkshirehathaway.com/letters/letters.html" target="_blank">Warren Buffett's Letters</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="card-header">Podcasts</div>
+                    <div class="card-content">
+                        <p>I enjoy listening to thought-provoking podcasts that cover a wide range of topics including business, technology, and personal development.</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCnaIPvYLegorDm_GQ9UuLRw" target="_blank">Diary of a CEO with Steven Bartlett</a></li>
+                            <li><a href="https://www.joerogan.com/" target="_blank">The Joe Rogan Experience</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="card-header">Books</div>
+                    <div class="card-content">
+                        <p>Reading is one of my favorite ways to gain new perspectives and knowledge. Here are some books that have influenced my thinking:</p>
+                        <div class="book-list">
+                            <div class="book">
+                                <div class="book-title">Greenlights</div>
+                                <div class="book-author">by Matthew McConaughey</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">Lost Connections</div>
+                                <div class="book-author">by Johann Hari</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">Zero to One</div>
+                                <div class="book-author">by Peter Thiel</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">Made in America</div>
+                                <div class="book-author">by Sam Walton</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">A Random Walk Down Wall Street</div>
+                                <div class="book-author">by Burton G. Malkiel</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">Can't Hurt Me</div>
+                                <div class="book-author">by David Goggins</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">Why Nations Fail</div>
+                                <div class="book-author">by Daron Acemoglu and James A. Robinson</div>
+                            </div>
+                            <div class="book">
+                                <div class="book-title">12 Rules for Life</div>
+                                <div class="book-author">by Jordan Peterson</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="card-header">Formula 1</div>
+                    <div class="card-content">
+                        <p>As a huge Ferrari tifosi, Formula 1 racing has become one of my greatest passions. The blend of cutting-edge technology, strategy, and raw driving talent makes it the ultimate motorsport.</p>
+                        <p>My top three drivers of all time:</p>
+                        <ol>
+                            <li>Michael Schumacher</li>
+                            <li>Sebastian Vettel</li>
+                            <li>Fernando Alonso</li>
+                        </ol>
+                        <div class="interest-links">
+                            <a href="https://www.ferrari.com/en-EN/formula1" target="_blank">Scuderia Ferrari</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="card-header">Football</div>
+                    <div class="card-content">
+                        <p>I'm a passionate fan of the real football - you know, the one actually played with your feet, not the American version! 😉</p>
+                        <p>As a devoted FC Barcelona supporter, I've followed the club through its highs and lows. The beautiful style of play that Barcelona embodies represents the purest form of the sport.</p>
+                        <p>My top three players:</p>
+                        <ol>
+                            <li>Lionel Messi</li>
+                            <li>Neymar Jr.</li>
+                            <li>Eden Hazard</li>
+                        </ol>
+                        <div class="interest-links">
+                            <a href="https://www.fcbarcelona.com/en/" target="_blank">FC Barcelona</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saadan Surhyo | Created for LIS351</p>
+    </footer>
+</body>
+</html>

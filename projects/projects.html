@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Saadan Surhyo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .project-category {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .project-category h3 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+        }
+        
+        .project {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .project-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .project-subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .project-tech {
+            margin-top: 10px;
+            color: #3498db;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saadan Surhyo</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../courses/coursework.html">Coursework</a></li>
+                <li><a href="../experience/workexp.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="../interests/interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Academic & Personal Projects</h2>
+            <p>Throughout my academic career, I've had the opportunity to work on various engineering and computer science projects. Below are some of the highlights showcasing my technical skills and problem-solving abilities.</p>
+            
+            <div class="projects-container">
+                <div class="project-category">
+                    <h3>Engineering Projects</h3>
+                    
+                    <div class="project">
+                        <div class="project-title">Digital Logic Analyser</div>
+                        <span class="project-subtitle">UW Madison (ECE551 Project)</span>
+                        <ul>
+                            <li>Designed and implemented a 5-channel logic analyzer capable of sampling signals at up to 400 MS/s with adjustable threshold levels, trigger conditions, and protocol-based triggering (SPI and UART)</li>
+                            <li>Developed RTL using Verilog HDL, partitioning functionality into datapath and control modules; performed functional verification using self-checking testbenches in ModelSim</li>
+                            <li>Synthesized the design using Synopsys Design Compiler, optimizing for area while meeting 1 GHz timing constraints, and demonstrated successful capture and analysis of test signals on the DE0-Nano FPGA board</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: SystemVerilog, ModelSim, Synopsys</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">Digital Neuron Design</div>
+                        <span class="project-subtitle">UW Madison (ECE555 Project)</span>
+                        <ul>
+                            <li>Designed a neural network perceptron module for machine learning acceleration using Cadence VLSI tools, optimizing for area and timing efficiency</li>
+                            <li>Developed MAC unit components with gate-to-layout design flow in ASAP7nm PDK, verifying via DRC/LVS</li>
+                            <li>Optimized critical paths across RVT/LVT process corners through parasitic extraction and metal (layer) routing</li>
+                            <li>Implemented 2-input neuron with configurable weights and ReLU activation for binary classification, characterized with FO4 loading through pre/post-layout simulation</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: Cadence VLSI Tools, ASAP7nm PDK</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">Embedded Multiplayer Dino Game</div>
+                        <span class="project-subtitle">UW Madison (ECE353 Project)</span>
+                        <ul>
+                            <li>Engineered a dynamic multiplayer Chrome Dino game on PSoC6 MCU using FreeRTOS, implementing real-time task management and UART-based player/game state synchronization</li>
+                            <li>Developed custom drivers to interface with various PSoC6 peripherals including joystick control, IMU-based obstacle dynamics, and light-sensitive display adjustments</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: C, FreeRTOS, PSoC6 MCU</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">MIPS Processor</div>
+                        <span class="project-subtitle">UW Madison (ECE552 Project)</span>
+                        <ul>
+                            <li>Currently working on designing and implementing a MIPS processor with pipelined architecture</li>
+                            <li>Developing core components including ALU, register file, control unit, and memory interfaces</li>
+                            <li>Implementing pipeline hazard detection and forwarding logic for optimal performance</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: SystemVerilog/Verilog, ModelSim</div>
+                    </div>
+                </div>
+                
+                <div class="project-category">
+                    <h3>Computer Science Projects</h3>
+                    
+                    <div class="project">
+                        <div class="project-title">Operating Systems</div>
+                        <span class="project-subtitle">UW Madison (CS537 Projects)</span>
+                        <ul>
+                            <li>Implemented various OS features including system calls, memory management, scheduling policies, and synchronization primitives in the xv6 operating system</li>
+                            <li>Developed a custom shell supporting pipes, environment vars, and built-in commands using the fork-exec model</li>
+                            <li>Built an optimized concurrent key-value store server using a thread-safe ring buffer and fine-grained locking</li>
+                            <li>Created a FUSE-based file system with support for core (CRUD) file and directory operations</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: C, xv6, Linux</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">Minirel Database Design</div>
+                        <span class="project-subtitle">UW Madison (CS564 Project)</span>
+                        <ul>
+                            <li>Built a single-user DBMS supporting simple SQL queries to understand query execution and DBMS internals</li>
+                            <li>Implemented a buffer manager with clock algorithm for page replacement and a hash table for page tracking</li>
+                            <li>Developed a heap file manager and query processing operators (selection, insertion, deletion) for the DBMS</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: C++, SQL, Unix</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">eBay Auction System</div>
+                        <span class="project-subtitle">UW Madison (CS564 Project)</span>
+                        <ul>
+                            <li>Designed a relational schema for a large-scale eBay auction data in JSON format using ER diagrams</li>
+                            <li>Developed a Python program to transform JSON data into SQLite load files based on the relational schema</li>
+                            <li>Created and tested a SQLite database with the transformed data, running complex SQL queries for validation</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: Python, SQL, SQLite, JSON</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">Reddit Posts Search Application</div>
+                        <span class="project-subtitle">UW Madison (CS400 Project)</span>
+                        <ul>
+                            <li>Co-led a backend team of 8 in the development of an app, that implemented a hash table-based search algorithm to efficiently index and retrieve 1000's of Reddit posts based on specific keywords</li>
+                            <li>Conducted comprehensive unit testing on 2 team members' code using JUnit to validate the performance of the search app, resulting in a highly reliable and error-free application</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: Java, JUnit</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">Air Travel Application</div>
+                        <span class="project-subtitle">UW Madison (CS400 Project)</span>
+                        <ul>
+                            <li>Led 4-person data wrangler team in transforming complex DOT files into optimized graph structures, successfully mapping 40 major US airport routes and connections</li>
+                            <li>Implemented Dijkstra's algorithm with custom waypoint filtering, enabling users to compute optimal routes while accommodating specific airport preferences</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: Java, Graph Algorithms</div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-title">AI/ML Projects</div>
+                        <span class="project-subtitle">UW Madison (CS540 Projects)</span>
+                        <ul>
+                            <li>Currently working on various AI and machine learning projects focused on neural networks and data analysis</li>
+                            <li>Implementing supervised and unsupervised learning algorithms for classification and pattern recognition</li>
+                        </ul>
+                        <div class="project-tech">Tech Stack: Python, Pandas, PyTorch, NumPy</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saadan Surhyo | Created for LIS351</p>
+    </footer>
+</body>
+</html>
